@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: hsl(30, 38%, 92%);
+    padding: 30px 15px;
+    display: flex;
+    align-items: center;
+}
+
+h1 {
+    font-family: 'Fraunces', serif;
+    margin: 10px 0;
+}
+.eyebrow__text {
+    letter-spacing: 5px;
+    color: hsl(228, 12%, 48%);
+}
+
+.page__wrapper {
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.content__block {
+    padding: 20px;
+}
+
+.image__block img {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    border-radius: 10px 10px 0 0;
+}
+
+button {
+    background-color: hsl(158, 36%, 37%);
+    margin: 10px 0;
+    border-radius: 10px;
+    color: #fff;
+    display: inline-block;
+    width: 100%;
+    text-transform: capitalize;
+    padding: 10px;
+    border: 0;
+    font-weight: bold;
+    min-height: 50px;
+    cursor: pointer;
+}
+
+button > * {
+    vertical-align: middle;
+}
+
+button img {
+    margin-right: 10px;
+}
+
+.main__description {
+    color: hsl(228, 12%, 48%);
+    line-height: 1.7;
+}
+
+.offer__price {
+    font-size: 2rem;
+    font-weight: bold;
+    color: hsl(158, 36%, 37%);
+    margin:10px 0;
+    display: inline-block;
+}
+
+.real__value {
+    text-decoration: line-through;
+    font-size: 0.8rem;
+}
+
+.desktop_only {
+    display: none;
+}
+
+.price__block {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+    flex-wrap: wrap;
+}
+
+@media screen and (min-width: 768px) {
+    .mobile__only {
+        display: none;
+    }
+
+    .desktop_only {
+        display: block;
+        object-fit: cover;
+    }
+
+    .page__wrapper {
+        max-width: 50%;
+        margin: 0 auto;
+        display: flex;
+    }
+
+    .page__wrapper > div {
+        width: 50%;
+    }
+
+    .image__block {
+        display: flex;
+    }
+
+    .image__block img {
+        border-radius: 10px 0 0 10px;
+    }
+
+    h1 {
+        margin-bottom: 20px;
+    }
+}
